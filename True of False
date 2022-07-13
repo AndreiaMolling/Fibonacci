@@ -1,0 +1,19 @@
+def Fibo(x):
+    a1 = 0
+    a2 = 1
+    if x == 0 or x == 1 :
+        print(x,'pertence a sequência de Fibonacci')
+    else:
+        for i in range(0,x+1,1):
+            a3 = a2 + a1
+            a1 = a2
+            a2 = a3
+            if x == a3:
+                print(x, 'Pertence a sequência de Fibonacci')
+                break
+            else:
+                continue
+        if x != a3:
+            print(x, 'Não pertence a sequência de Fibonacci')
+    
+    return 
